@@ -1,9 +1,11 @@
+from django.conf import settings
 from django.contrib import admin
 from .models import Product
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
+    list_per_page = settings.REST_FRAMEWORK.get('PAGE_SIZE', 10)
     list_display = (
         'id',
         'category',
