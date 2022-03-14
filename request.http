@@ -1,0 +1,145 @@
+@BASE_URL = http://127.0.0.1:8000
+
+
+###
+# register.user
+POST {{BASE_URL}}/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "asj214@naver.com",
+    "name": "sjahn",
+    "password": "rewq1234"
+}
+
+
+###
+# @name login
+POST {{BASE_URL}}/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "asj214@naver.com",
+    "password": "rewq1234"
+}
+
+
+###
+@token = {{ login.response.body.token }}
+
+
+###
+# auth.me
+GET {{BASE_URL}}/api/auth/me
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
+# categories.list
+GET {{BASE_URL}}/api/categories
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
+# categories.create
+POST {{BASE_URL}}/api/categories
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+{
+    "parent_id": null,
+    "name": "이벤트",
+    "order": 2,
+    "depth": 1
+}
+
+###
+# categories.create
+POST {{BASE_URL}}/api/categories
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+{
+    "parent_id": 5,
+    "name": "소프트웨어 개발",
+    "order": 2,
+    "depth": 2
+}
+
+
+###
+# categories.retrieve
+GET {{BASE_URL}}/api/categories/2
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
+# products.list
+GET {{BASE_URL}}/api/products
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
+# products.create
+POST {{BASE_URL}}/api/products
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+{
+    "category_id": 3,
+    "name": "상품 등록 테스트 (삭제용)",
+    "amount": 30000,
+    "description": "상품 상세 정보입니다."
+}
+
+
+###
+# products.retrieve
+GET {{BASE_URL}}/api/products/1
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
+# products.update
+PUT {{BASE_URL}}/api/products/1
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+{
+    "category_id": 2
+}
+
+
+###
+# products.destroy
+DELETE {{BASE_URL}}/api/products/30
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
+# purchases.list
+GET {{BASE_URL}}/api/purchases
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+
+###
+# purchases.create
+POST {{BASE_URL}}/api/purchases
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+{
+    "purchases": [
+        {
+            "product_id": 1
+        }
+    ]
+}

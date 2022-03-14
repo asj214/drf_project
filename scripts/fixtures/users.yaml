@@ -1,0 +1,28 @@
+- model: users.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$320000$v8zUN7A5OPEMw9uXJThTSH$cqzbZtBwzaE/w9u7/xnVw6eOi/30CU4AUH797i7nHNQ=
+    last_login: 2022-03-01 09:06:07.617441+00:00
+    created_at: 2022-03-01 09:05:42.307070+00:00
+    updated_at: 2022-03-01 09:05:42.317658+00:00
+    deleted_at: null
+    email: abc123@abc.com
+    name: admin
+    is_staff: true
+    is_superuser: true
+    groups: []
+    user_permissions: []
+- model: users.user
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$320000$lCKnMcaRQOASSAfCt8vCm2$1k8kl2qVLOc1EY8i2MPONFru9LKTUL9VFiBL5+L2z4s=
+    last_login: null
+    created_at: 2022-03-01 09:05:51.951111+00:00
+    updated_at: 2022-03-01 09:05:51.951129+00:00
+    deleted_at: null
+    email: asj214@naver.com
+    name: sjahn
+    is_staff: false
+    is_superuser: false
+    groups: []
+    user_permissions: []

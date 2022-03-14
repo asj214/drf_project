@@ -1,0 +1,137 @@
+- model: categories.category
+  pk: 1
+  fields:
+    created_at: 2022-03-01 10:07:27.751990+00:00
+    updated_at: 2022-03-01 10:13:27.635440+00:00
+    deleted_at: null
+    parent: null
+    user: 1
+    name: 홈 인테리어
+    path:
+    - 홈 인테리어
+    depth: 1
+    order: 1
+- model: categories.category
+  pk: 2
+  fields:
+    created_at: 2022-03-01 10:08:01.993341+00:00
+    updated_at: 2022-03-01 10:13:27.645857+00:00
+    deleted_at: null
+    parent: 1
+    user: 1
+    name: 페인트시공
+    path:
+    - 홈 인테리어
+    - 페인트시공
+    depth: 2
+    order: 1
+- model: categories.category
+  pk: 3
+  fields:
+    created_at: 2022-03-01 10:09:19.516353+00:00
+    updated_at: 2022-03-01 10:13:27.652756+00:00
+    deleted_at: null
+    parent: 1
+    user: 1
+    name: 집인테리어
+    path:
+    - 홈 인테리어
+    - 집인테리어
+    depth: 2
+    order: 2
+- model: categories.category
+  pk: 4
+  fields:
+    created_at: 2022-03-01 10:12:18.467481+00:00
+    updated_at: 2022-03-01 10:13:27.658508+00:00
+    deleted_at: null
+    parent: 1
+    user: 1
+    name: 싱크대 교체
+    path:
+    - 홈 인테리어
+    - 싱크대 교체
+    depth: 2
+    order: 3
+- model: categories.category
+  pk: 5
+  fields:
+    created_at: 2022-03-01 10:16:04.104494+00:00
+    updated_at: 2022-03-01 10:16:04.109505+00:00
+    deleted_at: null
+    parent: null
+    user: 1
+    name: 개발
+    path:
+    - 개발
+    depth: 1
+    order: 3
+- model: categories.category
+  pk: 6
+  fields:
+    created_at: 2022-03-01 10:16:39.641818+00:00
+    updated_at: 2022-03-01 10:16:39.648577+00:00
+    deleted_at: null
+    parent: null
+    user: 1
+    name: 이벤트
+    path:
+    - 이벤트
+    depth: 1
+    order: 2
+- model: categories.category
+  pk: 7
+  fields:
+    created_at: 2022-03-01 10:17:10.701563+00:00
+    updated_at: 2022-03-01 10:17:10.714166+00:00
+    deleted_at: null
+    parent: 6
+    user: 1
+    name: 결혼식 사회자
+    path:
+    - 이벤트
+    - 결혼식 사회자
+    depth: 2
+    order: 1
+- model: categories.category
+  pk: 8
+  fields:
+    created_at: 2022-03-01 10:17:23.474287+00:00
+    updated_at: 2022-03-01 10:17:23.482055+00:00
+    deleted_at: null
+    parent: 6
+    user: 1
+    name: 웨딩사진촬영
+    path:
+    - 이벤트
+    - 웨딩사진촬영
+    depth: 2
+    order: 2
+- model: categories.category
+  pk: 9
+  fields:
+    created_at: 2022-03-01 10:17:54.165062+00:00
+    updated_at: 2022-03-01 10:17:54.174417+00:00
+    deleted_at: null
+    parent: 5
+    user: 1
+    name: 앱 디자인
+    path:
+    - 개발
+    - 앱 디자인
+    depth: 2
+    order: 1
+- model: categories.category
+  pk: 10
+  fields:
+    created_at: 2022-03-01 10:18:03.438087+00:00
+    updated_at: 2022-03-01 10:18:03.447653+00:00
+    deleted_at: null
+    parent: 5
+    user: 1
+    name: 소프트웨어 개발
+    path:
+    - 개발
+    - 소프트웨어 개발
+    depth: 2
+    order: 2

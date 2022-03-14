@@ -1,0 +1,319 @@
+- model: products.product
+  pk: 1
+  fields:
+    created_at: 2022-03-01 11:06:52.922511+00:00
+    updated_at: 2022-03-01 11:07:30.199428+00:00
+    deleted_at: null
+    category: 2
+    user: 1
+    name: 상품 등록 테스트
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 2
+  fields:
+    created_at: 2022-03-01 11:09:18.734115+00:00
+    updated_at: 2022-03-01 11:09:18.734150+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 3
+  fields:
+    created_at: 2022-03-01 11:09:19.239716+00:00
+    updated_at: 2022-03-01 11:09:19.239735+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 4
+  fields:
+    created_at: 2022-03-01 11:09:19.625250+00:00
+    updated_at: 2022-03-01 11:09:19.625270+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 5
+  fields:
+    created_at: 2022-03-01 11:09:19.793934+00:00
+    updated_at: 2022-03-01 11:09:19.793954+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 6
+  fields:
+    created_at: 2022-03-01 11:09:19.963107+00:00
+    updated_at: 2022-03-01 11:09:19.963128+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 7
+  fields:
+    created_at: 2022-03-01 11:09:20.160830+00:00
+    updated_at: 2022-03-01 11:09:20.160853+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 8
+  fields:
+    created_at: 2022-03-01 11:09:20.284241+00:00
+    updated_at: 2022-03-01 11:09:20.284258+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 9
+  fields:
+    created_at: 2022-03-01 11:09:20.494130+00:00
+    updated_at: 2022-03-01 11:09:20.494150+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 10
+  fields:
+    created_at: 2022-03-01 11:09:20.681023+00:00
+    updated_at: 2022-03-01 11:09:20.681040+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 11
+  fields:
+    created_at: 2022-03-01 11:09:20.822954+00:00
+    updated_at: 2022-03-01 11:09:20.822971+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 12
+  fields:
+    created_at: 2022-03-01 11:09:21.017986+00:00
+    updated_at: 2022-03-01 11:09:21.018009+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 13
+  fields:
+    created_at: 2022-03-01 11:09:21.198687+00:00
+    updated_at: 2022-03-01 11:09:21.198709+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 14
+  fields:
+    created_at: 2022-03-01 11:09:21.369099+00:00
+    updated_at: 2022-03-01 11:09:21.369115+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 15
+  fields:
+    created_at: 2022-03-01 11:09:21.540656+00:00
+    updated_at: 2022-03-01 11:09:21.540675+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 16
+  fields:
+    created_at: 2022-03-01 11:09:21.745993+00:00
+    updated_at: 2022-03-01 11:09:21.746045+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 17
+  fields:
+    created_at: 2022-03-01 11:09:21.904950+00:00
+    updated_at: 2022-03-01 11:09:21.904972+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 18
+  fields:
+    created_at: 2022-03-01 11:09:22.094141+00:00
+    updated_at: 2022-03-01 11:09:22.094163+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 19
+  fields:
+    created_at: 2022-03-01 11:09:22.249672+00:00
+    updated_at: 2022-03-01 11:09:22.249691+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 20
+  fields:
+    created_at: 2022-03-01 11:09:22.452227+00:00
+    updated_at: 2022-03-01 11:09:22.452248+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 21
+  fields:
+    created_at: 2022-03-01 11:09:22.605045+00:00
+    updated_at: 2022-03-01 11:09:22.605065+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 22
+  fields:
+    created_at: 2022-03-01 11:09:22.804638+00:00
+    updated_at: 2022-03-01 11:09:22.804660+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 23
+  fields:
+    created_at: 2022-03-01 11:09:22.961207+00:00
+    updated_at: 2022-03-01 11:09:22.961224+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 24
+  fields:
+    created_at: 2022-03-01 11:09:23.145685+00:00
+    updated_at: 2022-03-01 11:09:23.145705+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 25
+  fields:
+    created_at: 2022-03-01 11:09:23.345351+00:00
+    updated_at: 2022-03-01 11:09:23.345376+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 26
+  fields:
+    created_at: 2022-03-01 11:09:23.521780+00:00
+    updated_at: 2022-03-01 11:09:23.521802+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 27
+  fields:
+    created_at: 2022-03-01 11:09:23.689669+00:00
+    updated_at: 2022-03-01 11:09:23.689688+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 28
+  fields:
+    created_at: 2022-03-01 11:09:23.875598+00:00
+    updated_at: 2022-03-01 11:09:23.875617+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
+- model: products.product
+  pk: 29
+  fields:
+    created_at: 2022-03-01 11:09:24.061705+00:00
+    updated_at: 2022-03-01 11:09:24.061724+00:00
+    deleted_at: null
+    category: 3
+    user: 1
+    name: 상품 등록 테스트 (삭제용)
+    amount: '30000.00'
+    description: 상품 상세 정보입니다.
