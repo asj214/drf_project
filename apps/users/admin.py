@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.contrib import admin
+from django.utils import timezone
 from .models import User
 
 
@@ -17,3 +18,6 @@ class UserAdmin(admin.ModelAdmin):
         'updated_at',
     )
     exclude = ('last_login', 'deleted_at',)
+
+    def delete_queryset(self, request, queryset):
+        queryset.update(deleted_at=timezone.now())

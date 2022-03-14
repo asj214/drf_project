@@ -28,7 +28,6 @@ class SoftDeleteManager(models.Manager):
 
 
 class SoftDeleteModel(models.Model):
-
     deleted_at = models.DateTimeField('삭제일', blank=True, null=True, default=None)
 
     class Meta:

@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.contrib import admin
+from django.utils import timezone
 from .models import Product
 
 
@@ -18,3 +19,6 @@ class ProductAdmin(admin.ModelAdmin):
     )
     exclude = ('deleted_at',)
     list_select_related = ('user', 'category',)
+
+    def delete_queryset(self, request, queryset):
+        queryset.update(deleted_at=timezone.now())
