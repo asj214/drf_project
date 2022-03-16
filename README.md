@@ -16,6 +16,9 @@ pip install -r requirements.txt
 
 python manage.py migrate
 
+# fixture
+sh init.sh
+
 python manage.py runserver_plus
 ```
 
@@ -26,10 +29,10 @@ python manage.py runserver_plus
 python manage.py show_urls
 
 # fixture dumps
-python manage.py dumpdata codes.Code --format=yaml > scripts/fixtures/codes.yaml
+python manage.py dumpdata users.User --format=yaml > scripts/fixtures/users.yaml
 
 # fixture loads
-python manage.py loaddata scripts/fixtures/codes.yaml
+python manage.py loaddata scripts/fixtures/users.yaml
 
 # test
 ```
