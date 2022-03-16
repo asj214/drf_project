@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_filters',
+    'django_seed',
     'apps.users',
     'apps.categories',
     'apps.products',
@@ -140,6 +141,7 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
     ),
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
 JWT_TOKEN_EXPIRE_DAY = env.int('JWT_TOKEN_EXPIRE_DAY')
