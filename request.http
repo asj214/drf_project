@@ -7,7 +7,7 @@ POST {{BASE_URL}}/api/auth/register
 Content-Type: application/json
 
 {
-    "email": "asj214@naver.com",
+    "email": "abc123@naver.com",
     "name": "sjahn",
     "password": "rewq1234"
 }
@@ -19,7 +19,7 @@ POST {{BASE_URL}}/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "abc123@abc.com",
+    "email": "asj214@naver.com",
     "password": "rewq1234"
 }
 
@@ -50,8 +50,8 @@ Authorization: Bearer {{ token }}
 
 {
     "parent_id": null,
-    "name": "이벤트",
-    "order": 2,
+    "name": "테스트",
+    "order": 3,
     "depth": 1
 }
 
@@ -77,8 +77,26 @@ Authorization: Bearer {{ token }}
 
 
 ###
+# categories.update
+PUT {{BASE_URL}}/api/categories/2
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+{
+    "name": "페인트 시공"
+}
+
+
+###
+# categories.destroy
+DELETE {{BASE_URL}}/api/categories/11
+Content-Type: application/json
+Authorization: Bearer {{ token }}
+
+
+###
 # products.list
-GET {{BASE_URL}}/api/products
+GET {{BASE_URL}}/api/products?page=1&per_page=5
 Content-Type: application/json
 Authorization: Bearer {{ token }}
 
@@ -90,34 +108,35 @@ Content-Type: application/json
 Authorization: Bearer {{ token }}
 
 {
-    "category_id": 3,
-    "name": "상품 등록 테스트 (삭제용)",
-    "amount": 30000,
+    "category_id": 8,
+    "name": "상품 등록 테스트",
+    "amount": 35000,
     "description": "상품 상세 정보입니다."
 }
 
 
 ###
 # products.retrieve
-GET {{BASE_URL}}/api/products/1
+GET {{BASE_URL}}/api/products/31
 Content-Type: application/json
 Authorization: Bearer {{ token }}
 
 
 ###
 # products.update
-PUT {{BASE_URL}}/api/products/1
+PUT {{BASE_URL}}/api/products/31
 Content-Type: application/json
 Authorization: Bearer {{ token }}
 
 {
-    "category_id": 2
+    "name": "웨딩 사진 촬영 전문가",
+    "amount": 120000
 }
 
 
 ###
 # products.destroy
-DELETE {{BASE_URL}}/api/products/30
+DELETE {{BASE_URL}}/api/products/31
 Content-Type: application/json
 Authorization: Bearer {{ token }}
 
@@ -139,7 +158,7 @@ Authorization: Bearer {{ token }}
 {
     "purchases": [
         {
-            "product_id": 1
+            "product_id": 2
         }
     ]
 }

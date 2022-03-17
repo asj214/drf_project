@@ -3,7 +3,6 @@ from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
 from .models import Category
 from .serializers import CategorySerializer
 
@@ -11,7 +10,7 @@ from .serializers import CategorySerializer
 class CategoryListCreateView(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticatedOrReadOnly]
     serializer_class = CategorySerializer
-    queryset = Category.objects.prefetch_related('children').all()
+    queryset = Category.objects.prefetch_related('children__children').all()
 
     def get_queryset(self):
         depth = self.request.query_params.get('depth', 1)
