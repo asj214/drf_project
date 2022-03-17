@@ -1,7 +1,7 @@
-from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser, BaseUserManager, PermissionsMixin
 )
+from django.db import models
 from core.models import TimeStampModel, SoftDeleteModel
 
 
@@ -23,7 +23,7 @@ class UserManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
-    
+
     def create_superuser(self, email, name, password):
         user = self.create_user(email=email, password=password, name=name, )
         user.is_staff = True

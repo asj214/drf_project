@@ -8,7 +8,7 @@ class AccountTests(APITestCase):
         self.data = {
             'email': 'hello123@abc.com',
             'name': 'hello123',
-            'password': 'rewq1234'            
+            'password': 'rewq1234'
         }
 
     def test_authenticated(self):

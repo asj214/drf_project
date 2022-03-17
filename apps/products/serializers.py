@@ -16,6 +16,7 @@ class ProductRelatedSerializer(serializers.ModelSerializer):
             'updated_at',
         )
 
+
 class ProductSerializer(serializers.ModelSerializer):
     category_id = serializers.IntegerField(write_only=True)
     category = CategoryRelatedSerializer(read_only=True)
@@ -35,7 +36,7 @@ class ProductSerializer(serializers.ModelSerializer):
             'created_at',
             'updated_at',
         )
-    
+
     def create(self, validated_data):
         user = self.context.get('user', None)
         return Product.objects.create(
@@ -47,7 +48,7 @@ class ProductSerializer(serializers.ModelSerializer):
         user = self.context.get('user', None)
         for (key, value) in validated_data.items():
             setattr(instance, key, value)
-        
+
         instance.user = user
         instance.save()
 

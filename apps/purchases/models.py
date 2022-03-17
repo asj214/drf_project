@@ -5,12 +5,12 @@ from core.models import TimeStampModel, SoftDeleteModel
 
 class Purchase(TimeStampModel, SoftDeleteModel):
     STATUS_CHOICES = (
-        ('PAYMENT_REQUEST', 'PAYMENT_REQUEST'), # 결제요청
-        ('PAYMENT_COMPLETE', 'PAYMENT_COMPLETE'), # 결제완료
-        ('PAYMENT_FAILED', 'PAYMENT_FAILED'), # 결제실패
-        ('REFUND_REQUEST', 'REFUND_REQUEST'), # 환불 요청
-        ('REFUND_COMPLETE', 'REFUND_COMPLETE'), # 환불 처리 완료
-        ('REFUND_REJECT', 'REFUND_REJECT'), # 환불 처리 반려
+        ('PAYMENT_REQUEST', 'PAYMENT_REQUEST'),  # 결제요청
+        ('PAYMENT_COMPLETE', 'PAYMENT_COMPLETE'),  # 결제완료
+        ('PAYMENT_FAILED', 'PAYMENT_FAILED'),  # 결제실패
+        ('REFUND_REQUEST', 'REFUND_REQUEST'),  # 환불 요청
+        ('REFUND_COMPLETE', 'REFUND_COMPLETE'),  # 환불 처리 완료
+        ('REFUND_REJECT', 'REFUND_REJECT'),  # 환불 처리 반려
     )
     user = models.ForeignKey(
         'users.User',
@@ -38,7 +38,7 @@ class Purchase(TimeStampModel, SoftDeleteModel):
 
     def __str__(self):
         return f'{self.id}'
-    
+
     def payment_complete(self):
         self.status = 'PAYMENT_COMPLETE'
         self.completed_at = timezone.now()
@@ -53,7 +53,7 @@ class Purchase(TimeStampModel, SoftDeleteModel):
         self.status = 'REFUND_COMPLETE'
         self.refund_completed_at = timezone.now()
         self.save()
-    
+
     def refund_reject(self):
         self.status = 'REFUND_REJECT'
         self.refund_completed_at = timezone.now()

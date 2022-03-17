@@ -1,8 +1,9 @@
 from rest_framework import generics, status
-from rest_framework.views import APIView
-from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from .models import Category
 from .serializers import CategorySerializer
 
@@ -15,7 +16,7 @@ class CategoryListCreateView(generics.ListCreateAPIView):
     def get_queryset(self):
         depth = self.request.query_params.get('depth', 1)
         return self.queryset.filter(depth=depth)
-    
+
     def get(self, request, *args, **kwargs):
         serializer = self.serializer_class(
             self.get_queryset(),
@@ -66,7 +67,7 @@ class CategoryView(APIView):
         serializer.save()
 
         return Response(serializer.data)
-    
+
     def delete(self, request, pk=None, *args, **kwargs):
         category = self.get_object(pk)
         category.delete()

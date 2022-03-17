@@ -9,7 +9,7 @@ class StaffOnly(permissions.BasePermission):
 
     def has_object_permission(self, request, view, obj):
         return self.chk_permission(request)
-    
+
     def chk_permission(self, request):
         is_authentication = False
         if request.user.is_authenticated and request.user.is_staff:

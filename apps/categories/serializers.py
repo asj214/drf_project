@@ -38,7 +38,7 @@ class CategorySerializer(serializers.ModelSerializer):
             'updated_at',
             'children',
         )
-    
+
     def create(self, validated_data):
         user = self.context.get('user', None)
         category = Category.objects.create(

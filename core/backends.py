@@ -5,7 +5,6 @@ from apps.users.models import User
 
 
 class JWTAuthentication(authentication.BaseAuthentication):
-
     AUTH_HEADER_PREFIX = ['Bearer']
 
     def authenticate(self, request):

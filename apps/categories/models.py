@@ -28,14 +28,14 @@ class Category(TimeStampModel, SoftDeleteModel):
 
     def __str__(self):
         return f'{self.name}'
-    
+
     def make_path(self, path: list = []):
         path.append(self.name)
         if self.parent_id is None:
             return list(reversed(path))
         else:
             return self.parent.make_path(path)
-    
+
     def set_path(self):
         self.path = self.make_path(path=[])
         self.save()

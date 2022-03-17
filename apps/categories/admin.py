@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.contrib import admin
 from django.utils import timezone
+
 from .models import Category
 
 
@@ -28,4 +29,3 @@ class CategoryAdmin(admin.ModelAdmin):
         return ' > '.join(obj.path)
 
     absolute_path.short_description = '경로'
-
